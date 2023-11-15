@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html><head><center><h2>Feedback Form</h2></center>
+<style>
+    #name{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#btn{
+    width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+}
+textarea{
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.card{
+    text-align: center;
+    width: 450px;
+    height: 640px;
+    margin-left: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(244, 241, 242);
+}
+</style></head>
+    <link rel="stylesheet" href="style3.css">
+    <body>
+      <div class="card">
+      <form action="reg.php" method="post" enctype="multipart/form-data">
+        <label for="firstname"><b>First Name</b></label><br><br>
+        <input type="text" id="name" name="firstname" placeholder="Enter your first name" required><br><br>
+        <label for="lastname"><b>Last Name</b></label><br><br>
+        <input type="text" id="name" name="lastname" placeholder="Enter your last name" required><br><br>
+        <label for="Gender"><b>Gender</b></label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="male" name="gender"value="female">
+        <label for="Female">Female</label><br>
+        <input type="radio" id="male" name="gender" value="other" >
+        <label for="Female">Other</label><br><br>
+        <label for="email"><b>Email.Id</b></label><br><br>
+        <input type="email" name="email" id="name" placeholder="Enter your mail Id"required><br><br>
+        <label for="email"><b>Mobile Number</b></label><br><br>
+        <input type="tel" name="mobile" id="name" placeholder="Enter your mobile number"required><br><br>
+        <label for="address"><b>Command</b></label><br>
+            <textarea rows="3" cols="50" id="command" name="commands"></textarea>
+            <br>
+      
+       <br><br><center><button id="btn">Submit</button></center>
+    </div>
+       </form>
+     </body>
+</html>

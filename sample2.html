@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assurance Candidate Document Collection</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            text-align: center;
+        }
+
+        .card {
+            border: 4px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .card1 {
+            border: 4px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+        }
+        #btnLoan{
+             margin-left: 700px;
+             width: 80px;
+             height: 30px;
+             font-weight: 800;
+        }
+        #place{
+            border: 2px solid black;
+            height: 30px;
+            width: 200px;
+        }
+        #address{
+            border: 2px solid black;
+        }
+        #btnAssurance{
+            margin-left: 700px;
+            width: 80px;
+             height: 30px;
+             font-weight: 800;
+        }
+        #images{
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images.jpeg" id="images">
+    <h2>ASSURANCE APPLICATION</h2>
+
+    <div class="card">
+        <h2>Assurance Candidate</h2>
+        <form action="connect1.php" method="post" enctype="multipart/form-data">
+            <label for="name"><b>Name</b></label><br>
+            <input type="text" id="place" name="Name" placeholder="Enter your name" required><br><br>
+            <label for="place"><b>Native Place</b></label><br>
+            <input type="text" id="place" name="NativePlace" placeholder="Enter your place" required><br><br>
+            <label for="name"><b>Mobile Number</b></label><br>
+            <input type="tel" id="place" name="MobileNumber" placeholder="Enter your mobile.no" required><br><br>
+            <label for="place"><b>Email ID</b></label><br>
+            <input type="email" id="place" name="EmailID" placeholder="Enter your email" required><br><br>
+            <label for="address"><b>Address</b></label><br>
+            <textarea rows="3" cols="50" id="Address" name="Address"></textarea><br><br>
+            <label for="MOD/hypo"><b>MOD/Hypothecation</b></label><br>
+            <input type="file" id="MOD/hypo" name="MODHypothecation" required><br><br>
+            <label for="checkLeaf"><b>Check Leaf</b></label><br>
+            <input type="file" id="checkLeaf" name="CheckLeaf" required><br><br>
+            <label for="photo"><b>Photo</b></label><br>
+            <input type="file" id="photo" name="Photo" required><br><br>
+            <label for="Aadhar"><b>Aadhar Card</b></label><br>
+            <input type="file" id="Aadhar" name="AadharCard" required><br><br>
+            <label for="Pan"><b>Pan Card</b></label><br>
+            <input type="file" id="Pan" name="PanCard" required><br><br>
+            <label for="Passbook"><b>Bank Passbook Xerox</b></label><br>
+            <input type="file" id="Passbook" name="BankPassbookXerox" required><br><br>
+            <label for="Security"><b>Security(Patharam)</b></label><br>
+            <input type="file" id="Security" name="Security" required><br><br>
+            <label for="pronote"><b>ProNote</b></label><br>
+            <p >(Click 2 if you want loan for less than 2,00,000 otherwise click  3)</p>
+            <input type="radio" id="1" name="PronoteType" value="2">
+            <label >2</label><br>
+            <input type="radio" id="1" name="PronoteType" value="3">
+            <label >3</label><br><br><br>
+
+            <button id="btnLoan">Submit</button>
+        </form>
+    </div>
+
+    
+</body>
+
+</html>
